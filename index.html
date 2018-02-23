@@ -20,12 +20,12 @@
               <a href="https://about.me/marcospeebles">Marcos Peebles</a>
               (<a href="https://twitter.com/marcospeebles">@MarcosPeebles</a>)
             </span>
-            &amp;
+            /
             <span class="presenter">
               <a href="http://cirrus.twiddles.com/">James Nash</a>
               (<a href="https://twitter.com/c1rrus">@c1rrus</a>)
             </span>
-            &amp;
+            /
             <span class="presenter">
               <a href="http://peach.smartart.it/">Matteo Pescarin</a>
               (<a href="https://twitter.com/ilpeach">@ilpeach</a>)
@@ -224,12 +224,10 @@
         <!-- Slide 8 : Modular mindset and styleguide docs -->
         <section id="modular-mindset" data-background-image="images/brasilia.jpg" class="center">
           <!-- Visible slide content goes here -->
-          <h3>Modular mindset?</h3>
-          <p class="fragment" style="color:rgba(0,0,0,1)"><br />Good for <strong>Freya & Dave & Beth</strong>.</p>
-          <p class="fragment"><strong>Better handover!</strong></p>
+          <h2 class="fragment">Modularity</h2>
 
           <aside class="notes">
-              <p>Modular is NOT new. Look at what mankind has done. Example of Brasilia by Paul Robert Lloyd <a href="https://paulrobertlloyd.com/2017/01/designing_systems_part_1" title="Designing Systems">Designing Systems, <b>Part 1: Theory, Practice, and the Unfortunate In-between</b></a></p>
+              <p>Modular is NOT new. Look at what mankind has done. Example of Brasília by <strong>Lúcio Costa</strong> and <strong>Oscar Niemeyer</strong> (Inspired by Paul Robert Lloyd's article: <a href="https://paulrobertlloyd.com/2017/01/designing_systems_part_1" title="Designing Systems">Designing Systems, <b>Part 1: Theory, Practice, and the Unfortunate In-between</b></a>)</p>
               <p>Templating lang, CSS tech, Design Tools, Style guide docs</p>
               <p>Less redundancy, Better fit, scalable, less £££</p>
 
@@ -249,24 +247,16 @@
         <!-- Slide 9 : Challenges due to modularity -->
         <section id="challenges" data-background-image="images/lego.jpg">
           <!-- Visible slide content goes here -->
-          <ul>
-            <li>
-              New challenges from modularity
-              <ul class="fragment">
-                <li>Organise UI comps?</li>
-                <li>Break them down?</li>
-                <li>Showcase code implementations?</li>
-              </ul>
-            </li>
-            <li class="fragment">
-              new > new + new { $set_of_challenges:size*2; }
-              <ul class="fragment">
-                <li>How should we organise and name our UI components?</li>
-                <li>How far should we break down our UI components?</li>
-                <li>As we implement the UI components in code, can we showcase them individually?</li>
-              </ul>
-            </li>
-          </ul>
+          <h2>Modularity challenges</h2>
+          <div class="fragment">
+            <ul>
+              <li>Breaking down</li>
+              <li>Organising</li>
+              <li>Showcasing</li>
+              <li>Documenting</li>
+            </ul>
+            <p>...components</p>
+          </div>
 
           <aside class="notes">
             <ul>
@@ -287,19 +277,12 @@
         </section>
 
         <!-- Slide 10 : Rise of the living style guides -->
-        <section id="patternlab" class="character" data-background-image="images/patternlab.jpg">
+        <section id="atomic-design" class="character">
           <!-- Visible slide content goes here -->
-          <p class="fragment">Atomic Design</p>
-          <p class="fragment">Style Guide generators</p>
-          <p class="fragment">Up-to-date, Easy-to-use</p>
-          <p class="fragment">Live components</p>
-          <p class="fragment">Consistency, Scalability</p>
-          <p class="fragment">BEM, OOCCSS, SMACS...</p>
-          <img src="images/brad-toastie.png" class="fragment fade-up invert portrait" alt="Brad Toastie">
-          <p class="fragment">Naming components, use the same language</p>
-          <p class="fragment">Accessibility, contrast (...)</p>
-          <p class="fragment" style="color:rgba(0,0,0,0.5)"><a href="http://bradfrost.com/" title="Brad Frost" style="color:rgba(0,0,0,0.5)">Brad Frost</a>, <a href="http://dmolsen.com/" title="Dave Olsen" style="color:rgba(0,0,0,0.5)">Dave Olsen</a> & <a href="http://www.brianmuenzenmeyer.com/" title="Brian Muenzenmeyer" style="color:rgba(0,0,0,0.5)">Brian Muenzenmeyer</a></p>
-          <h3 class="fragment" style="color:rgba(0,0,0,1)">No more hangovers?</h3>
+          <img src="images/atomic-design.svg" class="fragment atomic" alt="Atomic Design logo">
+
+          <img src="images/brad-toastie.png" class="fragment fade-left invert portrait" alt="Brad Toastie">
+
 
           <aside class="notes">
             <p>Once again, our methods and tools needed to evolve.</p>
@@ -310,6 +293,7 @@
               <p>Our style guides had come alive!</p>
               <p>Instead of just improving handovers, we were blurring the boundaries between the various disciplines. Freya, Dave and even Beth could be consumers of and contributors to the living styleguide.</p>
               <p>We began to wonder whether we could make handovers a thing of the past?</p>
+              <hr>
               <ul>
                 Atomic Design/Pattern Lab, <b>¡El trío fantástico!</b>
                 <li><a href="http://dmolsen.com/" title="Dave Olsen">Dave Olsen</a></li>

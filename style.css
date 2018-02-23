@@ -115,10 +115,6 @@ body {
 .reveal dd {
   margin-left: 40px; }
 
-.reveal q,
-.reveal blockquote {
-  quotes: none; }
-
 .reveal blockquote {
   display: block;
   position: relative;
@@ -149,7 +145,8 @@ body {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
 .reveal code {
-  font-family: monospace; }
+  font-family: monospace;
+  text-transform: none; }
 
 .reveal pre code {
   display: block;
@@ -244,42 +241,17 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls .navigate-left,
-.reveal .controls .navigate-left.enabled {
-  border-right-color: #13DAEC; }
-
-.reveal .controls .navigate-right,
-.reveal .controls .navigate-right.enabled {
-  border-left-color: #13DAEC; }
-
-.reveal .controls .navigate-up,
-.reveal .controls .navigate-up.enabled {
-  border-bottom-color: #13DAEC; }
-
-.reveal .controls .navigate-down,
-.reveal .controls .navigate-down.enabled {
-  border-top-color: #13DAEC; }
-
-.reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #71e9f4; }
-
-.reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #71e9f4; }
-
-.reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #71e9f4; }
-
-.reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #71e9f4; }
+.reveal .controls {
+  color: #13DAEC; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2); }
+  background: rgba(0, 0, 0, 0.2);
+  color: #13DAEC; }
 
 .reveal .progress span {
-  background: #13DAEC;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
@@ -313,13 +285,16 @@ body {
   #cover h1 {
     margin-bottom: 1em; }
   #cover p {
-    float: left; }
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
   #cover img {
     float: right;
-    border-left: 1px solid #aaa;
-    padding: 0.8em 0 0.8em 1.6em;
+    padding: 0 0 0.8em 1.6em;
     width: 32%; }
   #cover .presenter {
+    color: #fff;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -396,22 +371,44 @@ body {
 
 #modular-mindset {
   box-sizing: border-box;
-  height: 100%;
+  height: 60%;
   text-align: center; }
-  #modular-mindset h3 {
-    font-size: 1.9em; }
+  #modular-mindset h2 {
+    font-size: 2.5em;
+    text-shadow: 0 0.05em 0.1em rgba(0, 88, 194, 0.8); }
 
-#patternlab {
-  width: 100%;
-  text-align: left; }
-  #patternlab p {
-    font-size: 0.7em; }
-  #patternlab .portrait {
+#challenges h2,
+#challenges li,
+#challenges p {
+  text-shadow: 0 0.05em 0.8em rgba(0, 0, 0, 0.9); }
+
+#challenges li {
+  margin-top: 0.5em;
+  list-style-type: none; }
+
+#challenges ul {
+  width: 40%; }
+
+#challenges p {
+  width: 70%;
+  text-align: right; }
+
+#atomic-design {
+  width: 100%; }
+  #atomic-design .atomic {
     position: absolute;
-    top: 45%;
-    right: 2%;
-    max-height: 50%;
-    transform: rotate(-25deg); }
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); }
+  #atomic-design .portrait {
+    position: absolute;
+    top: 40%;
+    right: -6%;
+    max-height: 70%; }
+  #atomic-design .fragment.fade-left {
+    transform: translate(200%, 100%) rotate(-40deg); }
+    #atomic-design .fragment.fade-left.visible {
+      transform: translate(0, 0) rotate(-40deg); }
 
 #hostile-environment {
   box-sizing: border-box;
@@ -487,42 +484,28 @@ body {
     #product-not-project blockquote cite:before {
       content: '- '; }
 
-#challenges,
 #to-do,
 #to-do-2 {
   box-sizing: border-box;
   height: 100%; }
-  #challenges > ul,
   #to-do > ul,
   #to-do-2 > ul {
     column-count: 2;
     column-gap: 2em; }
-    #challenges > ul > li,
     #to-do > ul > li,
     #to-do-2 > ul > li {
       font-size: 1.4em;
       break-inside: avoid;
       list-style-type: none; }
-    #challenges > ul > li + li,
     #to-do > ul > li + li,
     #to-do-2 > ul > li + li {
       margin-top: 1em; }
-  #challenges li ul,
   #to-do li ul,
   #to-do-2 li ul {
     font-size: 36px; }
-    #challenges li ul li,
     #to-do li ul li,
     #to-do-2 li ul li {
       margin-top: 0.5em; }
-
-#challenges > ul > li {
-  font-size: 0.93333em; }
-
-#challenges li ul {
-  font-size: 24px; }
-  #challenges li ul li {
-    margin-top: 1em; }
 
 #ask-not {
   text-align: left; }
